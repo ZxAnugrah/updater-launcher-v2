@@ -69,13 +69,48 @@
             <div
               class="bulletin-item new-item"
               onclick="
+                upd_150426();
+                return false;
+              ">
+              <span class="bulletin-category category-update">UPDATE</span>
+              <span class="bulletin-date">15/04/2026</span>
+              <span class="bulletin-text">Version 2.1.43.1 · New content update</span>
+              <span class="bulletin-tag new">NEW</span>
+            </div>
+
+            <div
+              class="bulletin-item new-item"
+              onclick="
+                etc_150426();
+                return false;
+              ">
+              <span class="bulletin-category category-etc">ETC</span>
+              <span class="bulletin-date">15/04/2026</span>
+              <span class="bulletin-text">Revamp Change Logs · Version 2.0</span>
+              <span class="bulletin-tag new">NEW</span>
+            </div>
+
+            <div
+              class="bulletin-item new-item"
+              onclick="
+                sys_150426();
+                return false;
+              ">
+              <span class="bulletin-category category-system">SYSTEM</span>
+              <span class="bulletin-date">15/04/2026</span>
+              <span class="bulletin-text">Updater Launcher Bahasa Indonesia Fix · Version 2.0</span>
+              <span class="bulletin-tag new">NEW</span>
+            </div>
+
+            <div
+              class="bulletin-item"
+              onclick="
                 upd_020426();
                 return false;
               ">
               <span class="bulletin-category category-update">UPDATE</span>
               <span class="bulletin-date">02/04/2026</span>
               <span class="bulletin-text">Version 1.1.42.2 · New weapons, fixes & events</span>
-              <span class="bulletin-tag new">NEW</span>
             </div>
 
             <div
@@ -150,7 +185,7 @@
           <!-- Game Banner Card -->
           <div class="version-badge">
             <span class="version-label">Current Version</span>
-            <span class="version-number">1.1.42.2</span>
+            <span class="version-number">2.1.43.1</span>
           </div>
 
           <!-- Support Section -->
@@ -204,7 +239,7 @@
     <div id="customAlert" class="alert-modal">
       <div class="alert-content">
         <div class="alert-header">
-          <span class="alert-title">CSNS Updater</span>
+          <span class="alert-title">Update Patch Bahasa Indonesia Fix</span>
           <span class="alert-close" onclick="closeAlert()">&times;</span>
         </div>
         <div class="alert-body" id="alertMessage"></div>

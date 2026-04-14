@@ -269,6 +269,12 @@ body {
   border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
+.category-etc {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .bulletin-date {
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
@@ -496,8 +502,8 @@ body {
   position: absolute;
   width: 120px;
   height: 120px;
-  border-radius: 14px;
-  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.25) 0%, rgba(139, 92, 246, 0.1) 50%, transparent 80%);
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.25) 0%, rgba(139, 92, 246, 0.1) 50%, transparent 100%);
   filter: blur(15px);
   z-index: 1;
   animation: qr-pulse 3s infinite;
@@ -875,4 +881,35 @@ body.light-mode .qr-zoom-text {
 /* Cursor pointer utility */
 .cursor-pointer {
   cursor: pointer;
+}
+
+/* Enhanced Alert Body for better formatting */
+.alert-body {
+  padding: 24px 22px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: pre-line;
+  max-height: 350px;
+  overflow-y: auto;
+  font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+/* Make separators stand out */
+.alert-body {
+  word-break: break-word;
+}
+
+/* Custom scrollbar for alert body */
+.alert-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.alert-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.alert-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
 }
