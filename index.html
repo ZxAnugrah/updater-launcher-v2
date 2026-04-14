@@ -1,0 +1,521 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="inface-web-auth" content="forum.nexon.com" />
+    <meta name="inface-gid" content="2507" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.ibb.co/MqGKypR/og-images.jpg" />
+    <meta name="description" content="Updater Launcher Bahasa Indonesia Fix merupakan sebuah launcher untuk menambah sekaligus menggunakan patch Bahasa Indonesia versi fixed." />
+    <meta name="author" content="ZxAnugrah" />
+
+    <title>Updater Launcher · Bahasa Indonesia Fix</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./res/img/csn-logo.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./res/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./res/css/style.css" />
+    <link rel="stylesheet" href="css/default.css" />
+
+    <!-- Additional style for text selection prevention -->
+    <style>
+      /* Prevent text selection */
+      * {
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+      }
+
+      /* Prevent dragging images */
+      img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+        pointer-events: auto;
+      }
+
+      /* Disable cursor for non-interactive text */
+      body {
+        -webkit-touch-callout: none !important;
+      }
+    </style>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/bulletin/bulletin.js"></script>
+    <script src="./res/js/script.js"></script>
+    <script src="./res/js/games/273110.js"></script>
+  </head>
+  <body>
+    <div class="launcher-container">
+      <!-- ===== MAIN CONTENT ===== -->
+      <main class="launcher-main">
+        <!-- LEFT PANEL - Bulletin -->
+        <div class="left-panel">
+          <div class="panel-header">
+            <span class="panel-icon">📢</span>
+            <span class="panel-title">Updates & Announcements</span>
+          </div>
+
+          <div class="bulletin-container" id="bulletin">
+            <div
+              class="bulletin-item new-item"
+              onclick="
+                upd_020426();
+                return false;
+              ">
+              <span class="bulletin-category category-update">UPDATE</span>
+              <span class="bulletin-date">02/04/2026</span>
+              <span class="bulletin-text">Version 1.1.42.2 · New weapons, fixes & events</span>
+              <span class="bulletin-tag new">NEW</span>
+            </div>
+
+            <div
+              class="bulletin-item"
+              onclick="
+                upd_180326();
+                return false;
+              ">
+              <span class="bulletin-category category-update">UPDATE</span>
+              <span class="bulletin-date">18/03/2026</span>
+              <span class="bulletin-text">Version 1.1.42.1 · New weapons, medals & Season</span>
+            </div>
+
+            <div
+              class="bulletin-item"
+              onclick="
+                bug_logs_120226();
+                return false;
+              ">
+              <span class="bulletin-category category-bugfix">BUGFIX</span>
+              <span class="bulletin-date">12/02/2026</span>
+              <span class="bulletin-text">Version 1.1.41.2 · Epic Shop description fix</span>
+            </div>
+
+            <div
+              class="bulletin-item"
+              onclick="
+                upd_110226();
+                return false;
+              ">
+              <span class="bulletin-category category-update">UPDATE</span>
+              <span class="bulletin-date">11/02/2026</span>
+              <span class="bulletin-text">Version 1.1.41.1 · New content update</span>
+            </div>
+
+            <div
+              class="bulletin-item"
+              onclick="
+                upd_140126();
+                return false;
+              ">
+              <span class="bulletin-category category-update">UPDATE</span>
+              <span class="bulletin-date">14/01/2026</span>
+              <span class="bulletin-text">Version 1.1.40.1 · New weapons, maps & modes</span>
+            </div>
+
+            <div
+              class="bulletin-item"
+              onclick="
+                etc_140126();
+                return false;
+              ">
+              <span class="bulletin-category category-system">SYSTEM</span>
+              <span class="bulletin-date">14/01/2026</span>
+              <span class="bulletin-text">Bulletin reset · Annual cleanup</span>
+            </div>
+          </div>
+
+          <!-- Decorative Element -->
+          <div class="scanline-overlay"></div>
+        </div>
+
+        <!-- RIGHT PANEL - Actions & Support -->
+        <div class="right-panel">
+          <!-- Change Logs Button -->
+          <button class="action-btn changelog-btn" onclick="PagesChangeLog()">
+            <span class="btn-icon">📋</span>
+            <span class="btn-text">View Change Logs</span>
+            <span class="btn-arrow">→</span>
+          </button>
+
+          <!-- Game Banner Card -->
+          <div class="version-badge">
+            <span class="version-label">Current Version</span>
+            <span class="version-number">1.1.42.2</span>
+          </div>
+
+          <!-- Support Section -->
+          <div class="support-section">
+            <div class="support-header">
+              <span class="support-title">Support the Author</span>
+            </div>
+
+            <div class="qr-wrapper" title="Click to zoom">
+              <img src="./img/qr/qr-linktree.png" alt="LinkTree QR" class="qr-image" />
+              <div class="qr-glow"></div>
+            </div>
+
+            <div class="support-hint">
+              <span class="hint-icon">🔍</span>
+              <span class="hint-text">Click QR to zoom</span>
+            </div>
+
+            <!-- QR Zoom Modal -->
+            <div id="qrZoomModal" class="qr-zoom-modal" onclick="closeQrZoom()">
+              <div class="qr-zoom-content">
+                <img src="./img/qr/qr-linktree.png" alt="LinkTree QR Code" class="qr-zoom-image" />
+                <p class="qr-zoom-text">Scan dengan kamera</p>
+                <p class="qr-zoom-text-small">(Klik lagi untuk kembali)</p>
+              </div>
+            </div>
+
+            <div class="support-divider"></div>
+            <a href="https://linktr.ee/anugrah.zxc" class="text-no-decor" target="_blank">
+              <span class="support-footer">linktr.ee.anugrah.zxc</span>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="launcher-footer">
+        <div class="footer-left">
+          <span class="footer-text">Updater Launcher Bahasa Indonesia Fix</span>
+          <span class="footer-divider">|</span>
+          <span class="footer-text">ZxAnugrah</span>
+        </div>
+        <div class="footer-right">
+          <span class="status-indicator online"></span>
+          <span class="footer-text">Launcher Active</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Alert Modal (Custom) -->
+    <div id="customAlert" class="alert-modal">
+      <div class="alert-content">
+        <div class="alert-header">
+          <span class="alert-title">CSNS Updater</span>
+          <span class="alert-close" onclick="closeAlert()">&times;</span>
+        </div>
+        <div class="alert-body" id="alertMessage"></div>
+        <div class="alert-footer">
+          <button class="alert-btn" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legacy Alert Wrap (kept for compatibility) -->
+    <div id="alertWrap">
+      <span class="before"></span>
+      <div id="alertText"></div>
+    </div>
+
+    <script src="js/bulletin/bulletin_data.js"></script>
+
+    <script>
+      // ===== SECURITY RESTRICTIONS =====
+
+      // Disable Right Click
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Disable Keyboard Shortcuts
+      document.addEventListener("keydown", function (e) {
+        // Prevent F12 (Dev Tools)
+        if (e.key === "F12" || e.keyCode === 123) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C (Dev Tools)
+        if (e.ctrlKey && e.shiftKey) {
+          const key = e.keyCode || e.which;
+          if (key === 73 || key === 74 || key === 67 || key === 73) {
+            // I, J, C keys
+            e.preventDefault();
+            return false;
+          }
+        }
+
+        // Prevent Ctrl+U (View Source)
+        if (e.ctrlKey && (e.key === "u" || e.keyCode === 85)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+S (Save Page)
+        if (e.ctrlKey && (e.key === "s" || e.keyCode === 83)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+P (Print)
+        if (e.ctrlKey && (e.key === "p" || e.keyCode === 80)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+A (Select All)
+        if (e.ctrlKey && (e.key === "a" || e.keyCode === 65)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+C (Copy)
+        if (e.ctrlKey && (e.key === "c" || e.keyCode === 67)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+V (Paste)
+        if (e.ctrlKey && (e.key === "v" || e.keyCode === 86)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+X (Cut)
+        if (e.ctrlKey && (e.key === "x" || e.keyCode === 88)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+F (Find)
+        if (e.ctrlKey && (e.key === "f" || e.keyCode === 70)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Ctrl+Shift+Delete (Clear Browsing Data)
+        if (e.ctrlKey && e.shiftKey && (e.key === "Delete" || e.keyCode === 46)) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Alt+Left/Right (Browser Navigation)
+        if (e.altKey && (e.key === "ArrowLeft" || e.key === "ArrowRight")) {
+          e.preventDefault();
+          return false;
+        }
+
+        // Prevent Backspace (Browser Back)
+        if (e.key === "Backspace" || e.keyCode === 8) {
+          const target = e.target;
+          const isInput = target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable;
+          if (!isInput) {
+            e.preventDefault();
+            return false;
+          }
+        }
+      });
+
+      // Prevent Text Selection via Mouse
+      document.addEventListener("selectstart", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Prevent Drag and Drop
+      document.addEventListener("dragstart", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Prevent Copy Event
+      document.addEventListener("copy", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Prevent Cut Event
+      document.addEventListener("cut", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Prevent Paste Event
+      document.addEventListener("paste", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // Disable Text Selection on Double Click
+      document.addEventListener("dblclick", function (e) {
+        const target = e.target;
+        const isInput = target.tagName === "INPUT" || target.tagName === "TEXTAREA";
+        if (!isInput) {
+          e.preventDefault();
+          return false;
+        }
+      });
+
+      // Prevent Mouse 4/5 (Back/Forward) buttons
+      document.addEventListener("mousedown", function (e) {
+        if (e.button === 3 || e.button === 4) {
+          e.preventDefault();
+          return false;
+        }
+      });
+
+      // ===== END SECURITY RESTRICTIONS =====
+
+      function PagesChangeLog() {
+        location.replace("changelog.html");
+      }
+
+      // Custom Alert System (replaces browser alert)
+      function showCustomAlert(message) {
+        document.getElementById("alertMessage").innerText = message;
+        document.getElementById("customAlert").style.display = "flex";
+      }
+
+      function closeAlert() {
+        document.getElementById("customAlert").style.display = "none";
+      }
+
+      // Override default alert (optional - uncomment to use custom modal)
+      // const originalAlert = window.alert;
+      // window.alert = function(message) {
+      //     showCustomAlert(message);
+      // };
+
+      // Close alert on escape key (only when modal is open)
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          const modal = document.getElementById("customAlert");
+          if (modal.style.display === "flex") {
+            closeAlert();
+          }
+          e.preventDefault();
+        }
+      });
+
+      // Close alert when clicking outside
+      document.getElementById("customAlert").addEventListener("click", function (e) {
+        if (e.target === this) {
+          closeAlert();
+        }
+      });
+
+      // jQuery logging (preserved)
+      $("a").on("click", function () {
+        console.log(this);
+      });
+
+      // Additional protection - Disable DevTools detection
+      let devtoolsOpen = false;
+      const threshold = 160;
+
+      setInterval(function () {
+        const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+        const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+
+        if (widthThreshold || heightThreshold) {
+          if (!devtoolsOpen) {
+            devtoolsOpen = true;
+            // Optional: Add custom behavior when DevTools is opened
+            console.clear();
+          }
+        } else {
+          devtoolsOpen = false;
+        }
+      }, 500);
+
+      // ===== HIDE LINK PREVIEW IN BOTTOM-LEFT CORNER =====
+
+      // Function to handle all links
+      function setupLinkPreviewHider() {
+        document.querySelectorAll("a").forEach((link) => {
+          // Store original href
+          const originalHref = link.getAttribute("href");
+          if (!originalHref) return;
+
+          // Remove href to prevent preview
+          link.setAttribute("data-href", originalHref);
+          link.removeAttribute("href");
+
+          // Style to maintain cursor
+          link.style.cursor = "pointer";
+
+          // Handle click navigation
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const targetHref = this.getAttribute("data-href");
+            const target = this.getAttribute("target");
+
+            if (target === "_blank") {
+              window.open(targetHref, "_blank");
+            } else {
+              window.location.href = targetHref;
+            }
+          });
+        });
+      }
+
+      // Run on page load
+      setupLinkPreviewHider();
+
+      // ===== QR ZOOM FUNCTIONALITY =====
+
+      function openQrZoom() {
+        document.getElementById("qrZoomModal").style.display = "flex";
+      }
+
+      function closeQrZoom() {
+        document.getElementById("qrZoomModal").style.display = "none";
+      }
+
+      // Make QR wrapper clickable
+      document.addEventListener("DOMContentLoaded", function () {
+        const qrWrapper = document.querySelector(".qr-wrapper");
+        if (qrWrapper) {
+          qrWrapper.addEventListener("click", openQrZoom);
+        }
+      });
+
+      // Close QR zoom on escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          const qrModal = document.getElementById("qrZoomModal");
+          if (qrModal && qrModal.style.display === "flex") {
+            closeQrZoom();
+          }
+        }
+      });
+
+      // Close when clicking outside the image
+      document.addEventListener("DOMContentLoaded", function () {
+        const qrModal = document.getElementById("qrZoomModal");
+        if (qrModal) {
+          qrModal.addEventListener("click", function (e) {
+            if (e.target === this) {
+              closeQrZoom();
+            }
+          });
+        }
+      });
+
+      // Re-run if new links are added dynamically (optional)
+      // You can call setupLinkPreviewHider() again after adding new content
+
+      // Prevent console.log in production (uncomment to disable)
+      // console.log = function() {};
+      // console.warn = function() {};
+      // console.error = function() {};
+      // console.info = function() {};
+    </script>
+  </body>
+</html>
