@@ -65,6 +65,56 @@
           </div>
 
           <div class="bulletin-container" id="bulletin">
+            <!-- ===== PINNED SECTION ===== -->
+            <div class="pinned-section">
+              <div class="pinned-header">
+                <span class="pinned-icon">📌</span>
+                <span class="pinned-title">Pinned Announcements</span>
+              </div>
+
+              <div
+                class="pinned-item"
+                onclick="
+                  sys_160426();
+                  return false;
+                ">
+                <span class="bulletin-category category-system">SYSTEM</span>
+                <span class="bulletin-date">16/04/2026</span>
+                <span class="bulletin-text">Updater Launcher Bahasa Indonesia Fix · Version 2.0</span>
+                <span class="bulletin-tag new">NEW</span>
+              </div>
+
+              <div
+                class="pinned-item"
+                onclick="
+                  sys_150426();
+                  return false;
+                ">
+                <span class="bulletin-category category-system">SYSTEM</span>
+                <span class="bulletin-date">15/04/2026</span>
+                <span class="bulletin-text">Updater Launcher Bahasa Indonesia Fix · Version 2.0</span>
+                <span class="bulletin-tag new">NEW</span>
+              </div>
+            </div>
+
+            <!-- ===== DIVIDER ===== -->
+            <div class="bulletin-divider">
+              <span class="divider-text">Recent Updates</span>
+            </div>
+
+            <!-- ===== REGULAR BULLETIN ITEMS ===== -->
+            <div
+              class="bulletin-item new-item"
+              onclick="
+                bug_logs_160426();
+                return false;
+              ">
+              <span class="bulletin-category category-bugfix">BUGFIX</span>
+              <span class="bulletin-date">16/04/2026</span>
+              <span class="bulletin-text">Version 2.1.43.4 · New content update</span>
+              <span class="bulletin-tag new">NEW</span>
+            </div>
+
             <div
               class="bulletin-item new-item"
               onclick="
@@ -86,18 +136,6 @@
               <span class="bulletin-category category-etc">ETC</span>
               <span class="bulletin-date">15/04/2026</span>
               <span class="bulletin-text">Revamp Change Logs · Version 2.0</span>
-              <span class="bulletin-tag new">NEW</span>
-            </div>
-
-            <div
-              class="bulletin-item new-item"
-              onclick="
-                sys_150426();
-                return false;
-              ">
-              <span class="bulletin-category category-system">SYSTEM</span>
-              <span class="bulletin-date">15/04/2026</span>
-              <span class="bulletin-text">Updater Launcher Bahasa Indonesia Fix · Version 2.0</span>
               <span class="bulletin-tag new">NEW</span>
             </div>
 
@@ -184,7 +222,7 @@
           <!-- Game Banner Card -->
           <div class="version-badge">
             <span class="version-label">Current Version</span>
-            <span class="version-number">2.1.43.1</span>
+            <span class="version-number">2.1.43.4</span>
           </div>
 
           <!-- Support Section -->

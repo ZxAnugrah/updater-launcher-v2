@@ -1,3 +1,9 @@
+function sys_160426() {
+  showCustomAlert(
+    "Update 16/04/2026\n\nUpdate fix 'Updater Launcher Bahasa Indonesia Fix V2.0'.\nFitur yang diperbaiki:\n - Adjust 2 file apabila file yang di-update hanyalah 1.\n - Fix WebView yang tidak muncul pada beberapa device (Windows 10 & 11).\n - Menghapus folder precache WebView2 dari installer.\n\nTerima kasih untuk tester Updater Launcher versi fix:\n - Bani Ali Ikhsan.\n - NinoKuni (Rico).",
+  );
+}
+
 function sys_150426() {
   showCustomAlert(
     "Update 15/04/2026\n\nTelah rilis 'Updater Launcher Bahasa Indonesia Fix V2.0'.\nFitur baru yang ditambahkan:\n - Kustom direktori instalasi Counter-Strike Nexon.\n - Tombol 'Game Start' (Steam wajib dijalankan dan telah login pada akun yang akan dimainkan).\n - Upgrade SDK ke .NET 8.0.\n\nTerima kasih untuk tester Updater Launcher terbaru, Oscar Imannuel (GeludSkuy).",
@@ -53,4 +59,9 @@ function bug_logs_071125() {
 // Fix String Client Patch CSN 12.02.26
 function bug_logs_120226() {
   showCustomAlert("Update 12/02/2026:\n\n* V1.1.41.2\n- Fix deskripsi item pada Epic Shop.");
+}
+
+// Fix String Client Patch CSN 16.04.26
+function bug_logs_160426() {
+  showCustomAlert("Bug Fix 16/04/2026:\n\n* V2.1.43.4\n- Fix deskripsi pada title window.");
 }
