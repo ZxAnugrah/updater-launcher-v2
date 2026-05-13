@@ -49,6 +49,11 @@ function upd_150426() {
   showCustomAlert("Update 15/04/2026:\n\n* V2.1.43.1\n- New weapons\n- New medals\n- New items\n- New map\n- New season\n- New events\n- New systems\n\n(Selengkapnya, check pada Change Logs)");
 }
 
+// Update Client Patch CSN 15.04.26
+function upd_130526() {
+  showCustomAlert("Update 15/04/2026:\n\n* V2.1.44.1\n- New weapons\n- New class\n- New medals\n- New items\n- New map\n- New season\n- New events\n- New systems\n\n(Selengkapnya, check pada Change Logs)");
+}
+
 /* Bug Logs */
 
 // Fix Desc Client Patch CSN 07.11.25
