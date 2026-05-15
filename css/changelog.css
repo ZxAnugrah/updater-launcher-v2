@@ -277,6 +277,12 @@ body.light-mode .title-section {
   border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
+.version-badge.bugfix {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
 .version-number {
   color: white;
   font-size: 18px;

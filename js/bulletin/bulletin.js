@@ -70,3 +70,8 @@ function bug_logs_120226() {
 function bug_logs_160426() {
   showCustomAlert("Bug Fix 16/04/2026:\n\n* V2.1.43.4\n- Fix deskripsi pada title window.");
 }
+
+// Fix String Client Patch CSN 16.04.26
+function bug_logs_150526() {
+  showCustomAlert("Bug Fix 15/05/2026:\n\n* V2.1.44.3\n- Fix deskripsi pada medal 'Hop-Hop'.\n- Mengubah seluruh nama Skill Active Trait berdasarkan terjemahan Bahasa Inggris.\n- Mematikan custom font sebagai percobaan.");
+}
