@@ -300,7 +300,10 @@ body {
 
 .bulletin-tag.new {
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-  animation: glow-blue 2s infinite;
+}
+
+.bulletin-tag.coming-soon {
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
 }
 
 @keyframes glow-blue {

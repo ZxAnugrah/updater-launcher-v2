@@ -54,6 +54,10 @@ function upd_130526() {
   showCustomAlert("Update 15/04/2026:\n\n* V2.1.44.1\n- New weapons\n- New class\n- New medals\n- New items\n- New map\n- New season\n- New events\n- New systems\n\n(Selengkapnya, check pada Change Logs)");
 }
 
+function upd_unk01() {
+  showCustomAlert("Update Coming Soon:\n\n* V2.1.45.1\n- Fix deskripsi yang menghilang pada map Zombie Scenario - Pursuit: Missed Connection.");
+}
+
 /* Bug Logs */
 
 // Fix Desc Client Patch CSN 07.11.25
