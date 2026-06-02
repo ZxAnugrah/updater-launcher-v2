@@ -43,7 +43,6 @@ body {
   flex-direction: column;
   overflow: hidden; /* This prevents container scroll */
   position: relative;
-  border-radius: 16px;
 }
 
 .changelog-container::before {

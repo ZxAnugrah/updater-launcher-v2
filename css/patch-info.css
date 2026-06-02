@@ -28,7 +28,7 @@ body {
 }
 
 /* ===== MAIN CONTAINER ===== */
-.changelog-container {
+.patchinfo-container {
   width: 1183px;
   max-width: 1183px;
   height: 515px;
@@ -42,22 +42,20 @@ body {
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  border-radius: 16px;
 }
 
-.changelog-container::before {
+.patchinfo-container::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #10b981, #3b82f6, transparent);
   z-index: 10;
 }
 
 /* ===== HEADER (STICKY) ===== */
-.changelog-header {
+.patchinfo-header {
   padding: 12px 24px;
   display: flex;
   align-items: center;
@@ -163,7 +161,7 @@ body {
 }
 
 /* ===== CONTENT AREA ===== */
-.changelog-content {
+.patchinfo-content {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
@@ -175,17 +173,17 @@ body {
   scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
 }
 
-.changelog-content::-webkit-scrollbar {
+.patchinfo-content::-webkit-scrollbar {
   width: 6px;
 }
-.changelog-content::-webkit-scrollbar-track {
+.patchinfo-content::-webkit-scrollbar-track {
   background: transparent;
 }
-.changelog-content::-webkit-scrollbar-thumb {
+.patchinfo-content::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 3px;
 }
-.changelog-content::-webkit-scrollbar-thumb:hover {
+.patchinfo-content::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.25);
 }
 
@@ -388,13 +386,13 @@ body {
 }
 
 /* ===== CHANGELOG SECTIONS ===== */
-.changelog-section {
+.patchinfo-section {
   margin-bottom: 16px;
   width: 100%;
   max-width: 100%;
 }
 
-.changelog-section:last-child {
+.patchinfo-section:last-child {
   margin-bottom: 0;
 }
 
@@ -417,7 +415,7 @@ body {
   font-size: 16px;
 }
 
-.changelog-list {
+.patchinfo-list {
   list-style: none;
   padding-left: 28px;
   width: 100%;
@@ -426,7 +424,7 @@ body {
   overflow-wrap: break-word;
 }
 
-.changelog-list li {
+.patchinfo-list li {
   color: rgba(255, 255, 255, 0.75);
   font-size: 13px;
   padding: 4px 0;
@@ -434,7 +432,7 @@ body {
   word-break: break-word;
 }
 
-.changelog-list li::before {
+.patchinfo-list li::before {
   content: "▹";
   position: absolute;
   left: -18px;
@@ -442,7 +440,7 @@ body {
   font-size: 14px;
 }
 
-.changelog-list.two-column {
+.patchinfo-list.two-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4px 20px;
@@ -540,7 +538,7 @@ body {
 }
 
 /* ===== FOOTER ===== */
-.changelog-footer {
+.patchinfo-footer {
   padding: 10px 24px;
   display: flex;
   align-items: center;
@@ -606,12 +604,12 @@ body.light-mode {
   background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 50%, #f0f4f8 100%);
 }
 
-body.light-mode .changelog-container {
+body.light-mode .patchinfo-container {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.98) 100%);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 }
 
-body.light-mode .changelog-header {
+body.light-mode .patchinfo-header {
   background: rgba(255, 255, 255, 0.98);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -639,7 +637,7 @@ body.light-mode .info-label {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
-body.light-mode .changelog-list li {
+body.light-mode .patchinfo-list li {
   color: rgba(0, 0, 0, 0.7) !important;
 }
 
@@ -688,7 +686,7 @@ body.light-mode .hero-status {
   body {
     display: block;
   }
-  .changelog-container {
+  .patchinfo-container {
     width: 100%;
     max-width: 100%;
   }
@@ -702,4 +700,12 @@ img {
 ul,
 ol {
   max-width: 100%;
+}
+
+.text-gray {
+  color: gray;
+  font-size: 13px;
+}
+.margin-10 {
+  margin: 10px;
 }
