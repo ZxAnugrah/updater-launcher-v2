@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Counter-Strike Nexon: Studio - Patch Information" />
+    <meta name="description" content="Counter-Strike Nexon - Maintenance" />
     <meta name="author" content="ZxAnugrah" />
 
-    <title>Patch Info · Updater Launcher Bahasa Indonesia Fix</title>
+    <title>Maintenance · Bahasa Indonesia Fix</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/csn-logo.png" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/patch-info.css" />
-    <link rel="stylesheet" href="css/changelog.css" />
+    <link rel="stylesheet" href="css/maintenance.css" />
 
     <!-- Security Style -->
     <style>
@@ -27,6 +26,7 @@
 
       img {
         -webkit-user-drag: none;
+        user-drag: none;
       }
 
       body {
@@ -35,98 +35,46 @@
     </style>
   </head>
   <body>
-    <div class="patchinfo-container">
-      <header class="patchinfo-header">
-        <div class="header-left"></div>
-        <div class="header-right">
-          <button class="theme-btn" onclick="toggleTheme()" id="themeToggle">
-            <span class="theme-icon">🌙</span>
-            <span class="theme-text">Dark Mode</span>
-          </button>
-        </div>
-      </header>
-      <div class="title-section">
-        <h2 class="page-title">
-          Patch Info
-          <span class="title-line"></span>
-        </h2>
-      </div>
-      <!-- ===== CONTENT AREA ===== -->
-      <main class="patchinfo-content">
-        <div class="version-card">
-          <div class="version-body">
-            <div class="changelog-section">
-              <div class="section-title">
-                <span>1. Patch Original</span>
-              </div>
-              <ul style="list-style: none">
-                <li><span class="text-gray">Patch Original merupakan Patch Bahasa Indonesia tanpa tambahan patch lainnya.</span></li>
-              </ul>
-              <p class="text-gray margin-10">Preview:</p>
-              <img src="./img/big-images/1-custom-font.png" alt="Original (Custom Font)" />
-            </div>
-
-            <div class="changelog-section">
-              <div class="section-title">
-                <span>2. Patch Original (Custom Font)</span>
-              </div>
-              <ul style="list-style: none">
-                <li class="text-gray">
-                  <span class="text-gray"
-                    >Patch Original (Custom Font) merupakan Patch Bahasa Indonesia dengan tambahan patch custom font. Penambahan patch ini dikarenakan ada beberapa user yang terkendala 'force close' atau 'crash' tanpa alasan saat
-                    menjalankan game dan memasuki lobby.</span
-                  >
-                </li>
-              </ul>
-
-              <p class="text-gray margin-10">Preview:</p>
-              <img src="./img/big-images/1-custom-font.png" alt="Original (Custom Font)" />
-            </div>
-
-            <div class="changelog-section">
-              <div class="section-title">
-                <span>3. Patch Beta</span>
-              </div>
-              <ul style="list-style: none">
-                <li class="text-gray">
-                  <span class="text-gray"
-                    >Patch Beta merupakan Patch Bahasa Indonesia yang ditambahkan untuk pengguna (Beta) Fanmade Patch User. Pada patch ini, pengguna Beta dapat melakukan test string, patch, dan lain-lain untuk mencoba preview update string
-                    yang akan datang. Isi dari patch Beta adalah gabungan dari Original dan Original (Custom Font).</span
-                  >
-                </li>
-                <li class="text-gray">(Patch ini tidak dapat digunakan secara publik)</li>
-              </ul>
-            </div>
+    <div class="maintenance-container">
+      <!-- ===== MAIN CONTENT ===== -->
+      <main class="maintenance-content">
+        <!-- Maintenance Icon -->
+        <div class="maintenance-icon-wrapper">
+          <div class="maintenance-icon">
+            <span class="icon-large">🔧</span>
           </div>
+          <div class="icon-glow"></div>
         </div>
-        <div class="version-card">
-          <div class="version-body">
-            <div class="section-title">
-              <span>Cara Menggunakan</span>
-            </div>
-            <ul style="list-style: none">
-              <li>
-                <span class="text-gray">- Buka Updater Launcher Bahasa Indonesia Fix.</span>
-              </li>
-              <li>
-                <span class="text-gray">- Klik dropdown pada menu 'Pilih Patch' lalu klik salah satu patch yang akan digunakan.</span>
-                <br />
-                <img style="margin-bottom: 10px" src="./img/big-images/patch-1.png" />
-              </li>
-              <li>
-                <span class="text-gray">- Tunggu hingga Version berubah lalu klik 'Check Update'.</span>
-                <br />
-                <img style="margin-bottom: 10px" src="./img/big-images/patch-2.png" width="600px" />
-              </li>
-              <li>
-                <span class="text-gray">- Setelah patch yang dipilih berhasil dipasang, versi 'Installed' akan berubah sesuai dengan patch yang dipilih.</span>
-                <br />
-                <img style="margin-bottom: 10px" src="./img/big-images/patch-3.png" width="600px" />
-              </li>
-            </ul>
-          </div>
+
+        <!-- Maintenance Title -->
+        <h1 class="maintenance-title">
+          <span class="title-gradient">MAINTENANCE</span>
+        </h1>
+
+        <!-- Status Badge -->
+        <div class="maintenance-badge">
+          <span class="status-indicator maintenance"></span>
+          <span class="badge-text">Under Construction</span>
+        </div>
+
+        <!-- Estimated Time -->
+        <div class="eta-box">
+          <span class="eta-text">Web launcher sedang dalam pengembangan, mohon maaf atas ketidaknyamanan ini.</span>
         </div>
       </main>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="maintenance-footer">
+        <div class="footer-left">
+          <span class="footer-text">Updater Launcher Bahasa Indonesia Fix</span>
+          <span class="footer-divider">|</span>
+          <span class="footer-text">ZxAnugrah</span>
+        </div>
+        <div class="footer-right">
+          <span class="status-indicator maintenance-pulse"></span>
+          <span class="footer-text">Maintenance Mode</span>
+        </div>
+      </footer>
     </div>
 
     <script>
@@ -187,19 +135,19 @@
           body.classList.add("light-mode");
           themeIcon.textContent = "☀️";
           themeText.textContent = "Light Mode";
-          localStorage.setItem("patchinfo-theme", "light");
+          localStorage.setItem("maintenance-theme", "light");
         } else {
           body.classList.remove("light-mode");
           themeIcon.textContent = "🌙";
           themeText.textContent = "Dark Mode";
-          localStorage.setItem("patchinfo-theme", "dark");
+          localStorage.setItem("maintenance-theme", "dark");
         }
 
         isDarkMode = !isDarkMode;
       }
 
       // Load saved theme
-      const savedTheme = localStorage.getItem("patchinfo-theme");
+      const savedTheme = localStorage.getItem("maintenance-theme");
       if (savedTheme === "light") {
         document.body.classList.add("light-mode");
         const themeBtn = document.getElementById("themeToggle");
