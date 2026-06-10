@@ -1,3 +1,15 @@
+function sys_100626() {
+  showCustomAlert(
+    "Update 10/06/2026\n\nVersi baru 'Updater Launcher Bahasa Indonesia Fix V2.0'.\nFitur baru:\n - Pembagian patch menjadi 3 (Original, Original (Custom Font), dan Beta).\n - Video settings sebelum masuk dalam game.\n\nTerima kasih untuk tester Updater Launcher versi fix:\n - Cheyva.\n - Oscar Imannuel (GeludSkuy).",
+  );
+}
+
+function ntc_100626() {
+  showCustomAlert(
+    "Bagi pengguna patch Bahasa Indonesia Fix dengan launcher yang lama, harap download versi terbaru yang ada di channel #fanmade-patch → Threads (atau silahkan check pinned message) untuk menggunakan launcher terbaru dengan fitur dan update terbaru, launcher lama tidak akan memperbarui patch Bahasa Indonesia kalian apabila terdapat update terbaru. Dimohon untuk pengguna patch Bahasa Indonesia untuk me-uninstall launcher versi lama terlebih dahulu, lalu install versi terbaru.\n\nTerima kasih.",
+  );
+}
+
 function sys_160426() {
   showCustomAlert(
     "Update 16/04/2026\n\nUpdate fix 'Updater Launcher Bahasa Indonesia Fix V2.0'.\nFitur yang diperbaiki:\n - Adjust 2 file apabila file yang di-update hanyalah 1.\n - Fix WebView yang tidak muncul pada beberapa device (Windows 10 & 11).\n - Menghapus folder precache WebView2 dari installer.\n\nTerima kasih untuk tester Updater Launcher versi fix:\n - Bani Ali Ikhsan.\n - NinoKuni (Rico).",
@@ -54,8 +66,8 @@ function upd_130526() {
   showCustomAlert("Update 15/04/2026:\n\n* V2.1.44.1\n- New weapons\n- New class\n- New medals\n- New items\n- New map\n- New season\n- New events\n- New systems\n\n(Selengkapnya, check pada Change Logs)");
 }
 
-function upd_unk01() {
-  showCustomAlert("Update Coming Soon:\n\n* V2.1.45.1\n- Fix deskripsi yang menghilang pada map Zombie Scenario - Pursuit: Missed Connection.");
+function upd_100626() {
+  showCustomAlert("Update 10/06/2026:\n\n* V2.1.45.1\n- New weapons\n- New class\n- New medals\n- New items\n- New map\n- New season\n- New events\n- New systems\n\n(Selengkapnya, check pada Change Logs)");
 }
 
 /* Bug Logs */

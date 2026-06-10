@@ -275,6 +275,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.category-notice {
+  background: rgba(245, 208, 0, 0.15);
+  color: #df9800;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .bulletin-date {
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;

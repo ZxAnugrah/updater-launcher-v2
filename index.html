@@ -14,7 +14,7 @@
     <title>Updater Launcher · Bahasa Indonesia Fix</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./res/img/csn-logo.png" />
+    <link rel="icon" href="./img/csn-logo.png" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="./res/css/bootstrap.min.css" />
@@ -75,6 +75,18 @@
               <div
                 class="pinned-item"
                 onclick="
+                  sys_100626();
+                  return false;
+                ">
+                <span class="bulletin-category category-system">SYSTEM</span>
+                <span class="bulletin-date">10/06/2026</span>
+                <span class="bulletin-text">Updater Launcher Bahasa Indonesia Fix · Version 2.0</span>
+                <span class="bulletin-tag new">NEW</span>
+              </div>
+
+              <div
+                class="pinned-item"
+                onclick="
                   sys_160426();
                   return false;
                 ">
@@ -104,17 +116,29 @@
             <div
               class="bulletin-item new-item"
               onclick="
-                upd_unk01();
+                ntc_100626();
                 return false;
               ">
-              <span class="bulletin-category category-update">UPDATE</span>
-              <span class="bulletin-date">Coming Soon</span>
-              <span class="bulletin-text">Version 2.1.45.1</span>
-              <span class="bulletin-tag coming-soon">COMING SOON</span>
+              <span class="bulletin-category category-notice">NOTICE</span>
+              <span class="bulletin-date">10/06/2026</span>
+              <span class="bulletin-text">Notice untuk pengguna Patch</span>
+              <span class="bulletin-tag coming-soon">NEW</span>
             </div>
 
             <div
               class="bulletin-item new-item"
+              onclick="
+                upd_100626();
+                return false;
+              ">
+              <span class="bulletin-category category-update">UPDATE</span>
+              <span class="bulletin-date">10/06/2026</span>
+              <span class="bulletin-text">Version 2.1.45.1 · New content update</span>
+              <span class="bulletin-tag coming-soon">NEW</span>
+            </div>
+
+            <div
+              class="bulletin-item"
               onclick="
                 bug_logs_150526();
                 return false;
@@ -122,11 +146,10 @@
               <span class="bulletin-category category-bugfix">BUGFIX</span>
               <span class="bulletin-date">15/05/2026</span>
               <span class="bulletin-text">Version 2.1.44.3 · Bug fix deskripsi</span>
-              <span class="bulletin-tag new">NEW</span>
             </div>
 
             <div
-              class="bulletin-item new-item"
+              class="bulletin-item"
               onclick="
                 upd_130526();
                 return false;
@@ -134,7 +157,6 @@
               <span class="bulletin-category category-update">UPDATE</span>
               <span class="bulletin-date">13/05/2026</span>
               <span class="bulletin-text">Version 2.1.44.1 · New content update</span>
-              <span class="bulletin-tag new">NEW</span>
             </div>
 
             <div
@@ -253,7 +275,7 @@
           <!-- Game Banner Card -->
           <div class="version-badge">
             <span class="version-label">Current Version</span>
-            <span class="version-number">2.1.44.3</span>
+            <span class="version-number">45.1</span>
           </div>
 
           <!-- Support Section -->
