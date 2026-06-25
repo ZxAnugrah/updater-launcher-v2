@@ -10,6 +10,12 @@ function ntc_100626() {
   );
 }
 
+function ntc_250626() {
+  showCustomAlert(
+    "Dikarenakan layanan server Counter-Strike Nexon akan ditutup pada akhir September 2026, dengan ini, pada awal bulan September, saya selaku pemilik dari Updater Bahasa Indonesia Fix akan membuat seluruh patch (Original, Original (Custom Font), dan Beta menjadi 1 patch yang sama. Seluruh pengguna patch ini dapat menggunakan fitur Beta dan fitur yang kedepannya akan ditambahkan pada in-game.\n\nApabila game masih mendapatkan update untuk terakhir kalinya pada bulan Juli ini, patch akan tetap terbagi hingga layanan berakhir. Bersamaan layanan game berakhir, maka saya akan menghentikan project Bahasa Indonesia Fix ini.\n\nTerima kasih telah menggunakan patch ini, seluruh supporter, member CSNIC, dan seluruh player Counter-Strike Nexon.",
+  );
+}
+
 function sys_160426() {
   showCustomAlert(
     "Update 16/04/2026\n\nUpdate fix 'Updater Launcher Bahasa Indonesia Fix V2.0'.\nFitur yang diperbaiki:\n - Adjust 2 file apabila file yang di-update hanyalah 1.\n - Fix WebView yang tidak muncul pada beberapa device (Windows 10 & 11).\n - Menghapus folder precache WebView2 dari installer.\n\nTerima kasih untuk tester Updater Launcher versi fix:\n - Bani Ali Ikhsan.\n - NinoKuni (Rico).",
