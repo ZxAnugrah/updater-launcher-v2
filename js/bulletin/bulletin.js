@@ -73,7 +73,11 @@ function upd_130526() {
 }
 
 function upd_100626() {
-  showCustomAlert("Update 10/06/2026:\n\n* V2.1.45.1\n- New weapons\n- New class\n- New medals\n- New items\n- New map\n- New season\n- New events\n- New systems\n\n(Selengkapnya, check pada Change Logs)");
+  showCustomAlert("Update 10/06/2026:\n\n* V1.45.1\n- New weapons\n- New class\n- New medals\n- New items\n- New map\n- New season\n- New events\n- New systems\n\n(Selengkapnya, check pada Change Logs)");
+}
+
+function upd_080726() {
+  showCustomAlert("Adjustment 08/07/2026:\n\n* V1.46.0\n- Adjustment pada beberapa strings.\n- Mengganti loading screen saat game dibuka.\n- Mengganti gambar banner pada sudut kanan bawah lobby.");
 }
 
 /* Bug Logs */
